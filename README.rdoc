@@ -1,0 +1,39 @@
+== README
+
+MODEL TEST REQUIREMENTS --------------------------------------------------------
+
+Bug Model
+    
+    Attribute Descriptions
+    
+    -title: a short descriptive title summarizing the problem.
+    -description: a longer piece of text which describes the details of the problem.
+    -issue_type: has three possible values: issue, enhancement, feature.
+    -priority: priority of the issue with three possible levels: low, medium, high.
+    -status: the current status of the bug with three possible settings: open, closed,
+        monitor.
+
+    Test Requirements
+    
+    -Title and description cannot be blank whenever a bug is created or edited.
+    -Issue_type, priority and status must have valid values (you should represent these
+        values as enumerated types.)
+    -The default value of issue_type should be feature (2).
+    -The default value of priority should be medium (1).
+    -The default value of status should be open (0).
+    
+User Model
+    
+    Attribute Descriptions
+    
+    -last_name: the user's last name
+    -first_name: the user's first name
+    -email: the user's email address
+    -thumbnail: a reference to the user's thumbnail image
+    
+    Test Requirements
+    
+    -last_name, first_name, email cannot be blank whenever an author is created or edited.
+    -email must be unique and be a valid format for an email address.
+    -thumbnail must end with either .png, .jpg, or .gif. It is ok to leave the thumbnail
+        field blank.
