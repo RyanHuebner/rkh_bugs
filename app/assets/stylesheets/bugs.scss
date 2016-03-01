@@ -1,3 +1,113 @@
 // Place all the styles related to the Bugs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.title {
+    background-color: #387780;
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.user {
+    background-color: #387780;
+    color: white;
+    float: right;
+    width: 50%;
+    padding: 15px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.row {
+    background-color: white;
+    width: 100%;
+}
+
+.description {
+    width: 80%;
+    height: 150px;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    float: left;
+}
+
+.bug_info {
+    box-sizing: border-box;
+    padding: 15px;
+    float: right;
+    background-color: #CFD8DC;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 150px;
+}
+
+.bug_info li {
+    display: block;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+    
+.actions {
+    
+}
+
+.field {
+    width: 200px;
+}
+
+input[type=submit] {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 1px 2px #666666;
+    -moz-box-shadow: 1px 1px 2px #666666;
+    box-shadow: 1px 1px 2px #666666;
+    font-size: 14px;
+    background: #E4572E;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input[type=submit]:hover {
+    background-color: #FF7043;
+    text-decoration: none;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    padding: 16px 20px;
+    border: none;
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ $nav-color: #363537;
+ $background-color: #C6C5B9;
+ $accent-orange: #E4572E;
+ $light-text-color: white;
+ $blue-accent: #387780;
+ $btn-hover-color: #FF7043;
+ $light-blue-accent: #CFD8DC;
+ 
+body {
+     background-color: $background-color;
+     margin-top: 75px;
+     margin-left: 16%; 
+    //  margin-right: 30px;
+ }
+ 
+ .header {
+    color:#E4572E;
+    text-align: center;
+}
+ 
+#qwerty {
+    margin-top: 100px;
+}
+ 
+ #banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $nav-color;
+    padding: 5px;
+    font: small-caps 50px/50px "Times New Roman", serif;
+    color: $accent-orange;
+    text-align: center;
+     
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    
+    img {
+        float: left;
+    }
+
+ }
+ 
+ul#menu {
+    margin: 0;
+    padding: 0;
+    background-color: $nav-color;
+    list-style-type: none;
+    overflow: hidden;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 75;
+}
+
+
+ul#menu li a {
+    display: block;
+    text-align: center;
+    color: $light-text-color;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+ }
+
+ul#menu li a:hover {
+    background-color: $blue-accent;
+}
+
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 1px 1px 2px #666666;
+  -moz-box-shadow: 1px 1px 2px #666666;
+  box-shadow: 1px 1px 2px #666666;
+  font-size: 14px;
+  background: #E4572E;
+  display: inline-block;
+}
+
+.btn a {
+    display: inline-block;
+    text-align: center;
+    color: $light-text-color;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn a:hover {
+  background-color: $btn-hover-color;
+  text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    -webkit-box-shadow: 8px 8px 6px -6px #999;
+    -moz-box-shadow: 8px 8px 6px -6px #999;
+    box-shadow: 8px 8px 6px -6px #999;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+
+.theader {
+    background-color: $blue-accent;
+    padding: 15px;
+    color: white;
+}
+
+.cell {
+        padding: 15px;
+        text-align: left;
+    }
+    
+.table_crud {
+    list-style-type: none;
+    padding:5px;
+}
+    
+tr:nth-child(even) {background-color: $light-blue-accent}
+
+.card {
+    -webkit-box-shadow: 8px 8px 6px -6px #999;
+    -moz-box-shadow: 8px 8px 6px -6px #999;
+    box-shadow: 8px 8px 6px -6px #999;
+    box-sizing: border-box;
+    background-color: white;
+    display: inline-block;
+}
+
+.form_title {
+    color:#E4572E;
+}

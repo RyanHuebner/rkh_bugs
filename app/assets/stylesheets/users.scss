@@ -1,3 +1,37 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user_info {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.user_thumb {
+    height: 200px;
+    width: 200px;
+    background-color: #E4572E;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 1px 2px #666666;
+    -moz-box-shadow: 1px 1px 2px #666666;
+    box-shadow: 1px 1px 2px #666666;
+    font-size: 14px;
+    background: #E4572E;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+input[type=submit]:hover {
+    background: #FF7043;
+    text-decoration: none;
+}

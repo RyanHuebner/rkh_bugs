@@ -1,19 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @user.first_name + ' ' + @user.last_name %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Thumbnail:</strong>
-  <%= @user.thumbnail %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="card">
+  <img class="user_thumb" alt="user image">
+  <p class="user_info"><strong>User: </strong><%= @user.first_name + ' ' + @user.last_name %></p>
+  <p class="user_info" style="padding-bottom: 15px"><strong>Email: </strong><%= @user.email %></p>
+</div>
+ <br>
+ <br>
+ <span class="btn">
+   <%= link_to 'Edit', edit_user_path(@user) %>
+ </span>
+ <span class="btn">
+  <%= link_to 'Back', users_path %>
+ </span>

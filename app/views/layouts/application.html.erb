@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <div id="banner">
+    <img class="logo" src=<%= asset_path( 'shield-against-bugs.png' ) %>>
+     <%= "Bug Squisher!" %>
+  </div>
+  <div>
+    <ul id="menu">
+      <li><a href="/pages/home">Home</a></li>
+      <li><a href="/bugs">Bugs</a></li>
+      <li><a href="/users">Users</a></li>
+      <li><a href="/pages/contact">Contact</a></li>
+    </ul>
+  </div>
+  <br>
+  <%= yield %>
 
 </body>
 </html>

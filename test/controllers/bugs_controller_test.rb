@@ -3,6 +3,8 @@ require 'test_helper'
 class BugsControllerTest < ActionController::TestCase
   setup do
     @bug = bugs(:one)
+    @user= User.create(last_name: "last", first_name: "first", email: "rails@mail.com",
+      thumbnail: "me.png")
   end
 
   test "should get index" do
@@ -35,7 +37,7 @@ class BugsControllerTest < ActionController::TestCase
   end
 
   test "should update bug" do
-    patch :update, id: @bug, bug: { description: @bug.description, issue_type: @bug.issue_type, priority: @bug.priority, status: @bug.status, title: @bug.title }
+    patch :update, id: @bug, bug: { description: @bug.description, issue_type: @bug.issue_type, priority: @bug.priority, status: @bug.status, title: @bug.title, user_id: @user.user_id }
     assert_redirected_to bug_path(assigns(:bug))
   end
 

@@ -1,34 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
- <strong>User:</strong>
- <%= ((@bug.user.first_name + ' ' + @bug.user.last_name) || "NA")%>
-</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @bug.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @bug.description %>
-</p>
-
-<p>
-  <strong>Issue type:</strong>
-  <%= @bug.issue_type %>
-</p>
-
-<p>
-  <strong>Priority:</strong>
-  <%= @bug.priority %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @bug.status %>
-</p>
-
-<%= link_to 'Edit', edit_bug_path(@bug) %> |
-<%= link_to 'Back', bugs_path %>
+<div class="card" style="width: 750px">
+  <div class="title"><strong>Title: </strong><%= @bug.title %></div>
+  <div class="user"><strong>Submitted by: </strong>
+    <%= ((@bug.user.first_name + ' ' + @bug.user.last_name) || "NA")%>
+  </div>
+  <div class="row">
+    <div class="description"><strong>Description: </strong>
+      <%= @bug.description %>
+    </div>
+    <ul class="bug_info">
+      <li><strong>Issue type: </strong><%= @bug.issue_type %></li>
+      <li><strong>Priority: </strong><%= @bug.priority %></li>
+      <li><strong>Status: </strong><%= @bug.status %></li>
+    </ul>
+  </div>
+</div>
+<br>
+<div class="btn_box">
+ <span class="btn">
+   <%= link_to 'Edit', edit_bug_path(@bug) %>
+ </span>
+ <span class="btn">
+  <%= link_to 'Back', bugs_path %>
+ </span>
+</div>

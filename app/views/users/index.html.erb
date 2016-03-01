@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Users</h1>
+<h1 class="header">Listing Users</h1>
 
-<table>
-  <thead>
+<table class="table">
+  <thead class="theader">
     <tr>
-      <th>User</th>
-      <th>Email</th>
-      <th>Thumbnail</th>
+      <th class="cell">User</th>
+      <th class="cell">Email</th>
+      <th class="cell">Thumbnail</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,17 +15,22 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name + ' ' + user.last_name %></td>
-        <td><%= user.email %></td>
-        <td><%= user.thumbnail %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="cell"><%= user.first_name + ' ' + user.last_name %></td>
+        <td class="cell"><%= user.email %></td>
+        <td class="cell"><%= user.thumbnail %></td>
+        <td>
+          <ul class="table_crud">
+            <li><%= link_to 'Show', user %></li>
+            <li><%= link_to 'Edit', edit_user_path(user) %></li>
+            <li><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+          </ul>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New User', new_user_path %>
+<span class="btn">
+  <%= link_to 'New User', new_user_path %>
+</span>
